@@ -1,5 +1,4 @@
 # csd-340
-Class work submissions for CSD 340
 
 # CSD 340 Web Development with HTML and CSS
 
@@ -7,4 +6,3 @@ Class work submissions for CSD 340
 
 * Joseph Issa
 * Brandon Hackett
-*/
