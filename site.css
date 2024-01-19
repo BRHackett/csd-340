@@ -1,1 +1,52 @@
+@font-face {
+    font-family: 'FAMILY_NAME';
+    src: url(FONT_FILE_NAME.woff2) format('woff2');
+   }
 
+   #container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+   }
+   h1 {
+    color: darkblue;
+    background-color: beige;
+    border: solid;
+    border-width: 1px;
+    border-color: #D6A800;
+    padding: 10px;
+   }
+   h2 {
+    color: darkblue;
+    background-color: beige;
+    border: solid;
+    border-width: 1px;
+    border-color: #D6A800;
+    padding: 10px;
+   }
+   h3 {
+    color: darkblue;
+    background-color: beige;
+    border: solid;
+    border-width: 1px;
+    border-color: #D6A800;
+    padding: 10px;
+   }
+   h4 {
+    color: darkblue;
+    background-color: beige;
+    border: solid;
+    border-width: 1px;
+    border-color: #D6A800;
+    padding: 10px;
+   }
+   a {
+    color: blue;
+    text-decoration: none;
+   }
+   a:hover{
+    color: darkgreen;
+   }
+   a:visited{
+    color: darkred
+   }
