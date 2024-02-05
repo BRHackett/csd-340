@@ -88,19 +88,19 @@ body {
     flex-direction: column;
 }
 
-#movies {
+.movies {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 30px;
 }
 
-#movies th {
+.movies th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
 }
 
-#movies td {
+.movies td {
     border-width: 1px;
     border-color: #ddd;
     padding: 8px;
