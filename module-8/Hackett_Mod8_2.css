@@ -101,7 +101,7 @@ th {
 }
 
 td {
-    border-width: 1px;
+    border: 1px;
     border-color: #ddd;
     padding: 8px;
 }
