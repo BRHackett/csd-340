@@ -31,9 +31,7 @@ h1 {
 }
 
 #container {
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 2%, 5%, 100px, 5%;
     padding: 10px;
 }
 
@@ -83,3 +81,28 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border-width: 1px;
+    border-color: #ddd;
+    padding: 8px;
+}
+
