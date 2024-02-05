@@ -94,13 +94,13 @@ body {
     margin-bottom: 30px;
 }
 
-.movies th {
+th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
 }
 
-.movies td {
+td {
     border-width: 1px;
     border-color: #ddd;
     padding: 8px;
