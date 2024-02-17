@@ -1,0 +1,55 @@
+<!-- Brandon Hackett: Assignment 2.2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="author"
+        content="Brandon Hackett"/>
+    <meta name="description"
+        content="Assigment for CSD 340 showing CSS and HTML understanding"/>
+    <meta name="robots"
+        content="nofollow"/>
+    <meta name="keywords"
+        content="homework, student, CSS, HTML, class, Bellevue"/>
+    <link rel="stylesheet" href="hackett_Mod9_9.css" type="text/css" /> 
+    <script>
+        var firstVariableValue = "Bellevue University";
+        var secondVariableValue = "Brandon Hackett";
+        var thirdVariableValue = "Oklahoma";
+        var fourthVariableValue = "Edison";
+    </script> 
+</head>
+
+<body>
+<div id="container">    
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <h2>Chapter 1: Linking CSS</h2>
+    <p class="intro">Hello, my name is <span id="name">___________</span>. I am currently studying software development at <span id="university">_________________</span>. I am also working full time and live in Florida. I have a husband Kyle and chocolate lab <span id="dog">________</span>.</p>
+    <p><span class="sentence"> I grew up in a small town in <span id="state">___________</span>.</span> It was so small, that I graduated high school with 96 of others. I went to school with the same kids K-12. I am grateful for that upbringing but did have its challenges.</p> 
+    <p>I have two older sisters. Connie has one child, Greg. Becky has two children, Jake and Jessica. Jessica has one daughter. My sisters are much older than I am. My father is 40 years older than I am. </p>
+    <p>I am currently living in my first home of my own. We built it from the ground up. It was a fun process from picking out the lot, to picking out the flooring. I was very lucky to live close to the construction and caught many errors before they became difficult fixes later. </p>
+
+    <br>
+    <p>
+        <button type="button"
+        onclick="document.getElementById('university').innerHTML = firstVariableValue">School</button> <br /> 
+        <br>
+        <button type="button"
+        onclick="document.getElementById('name').innerHTML = secondVariableValue">Name</button> <br />    
+        <br>
+        <button type="button"
+        onclick="document.getElementById('state').innerHTML = thirdVariableValue">State</button> <br />
+        <br>
+        <button type="button"
+        onclick="document.getElementById('dog').innerHTML = fourthVariableValue">Dog</button> <br />        
+    </p>
+    <hr />
+    <address>
+        <p><a href="https://www.bellevue.edu">Bellevue University</a></p>
+        <p>1000 Galvin Road South</p>
+        <p>Bellevue, Nebraska 68005</p>
+    </address>
+</div>
+</body>
+
+</html>
