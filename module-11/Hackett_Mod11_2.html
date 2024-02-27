@@ -1,0 +1,81 @@
+<!-- Brandon Hackett: Assignment 11.2 -->
+<!--based on w3.org Transitional-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+      #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    } 
+    </style>
+    <script>
+      let todo = [];
+
+      function addarray () {
+        let todoItem = document.getElementById("textInput").value;
+        if (todoItem !== ''){
+        indexNumber = todo.push(todoItem)-1;
+        }
+
+
+        const popupText = document.getElementById('popupText');
+        const popupCount = document.getElementById('popupCount');
+        popupText.textContent = `Item added: ${todoItem}`;
+        popupCount.textContent = `New Item Index: ${indexNumber}`;
+        document.getElementById('popup').style.display = 'block';
+
+        // Clear input field
+        itemInput.value = ''; 
+      }
+      function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+
+      function deletearray () {
+        todo.pop(); 
+      }
+
+      function displayItems() {
+      const displayArea = document.getElementById('currentList');
+      displayArea.innerHTML = ''; 
+
+      for (let i = 0; i < todo.length; i++) {
+        const listItem = document.createElement('p');
+        listItem.textContent = `${i + 1}. ${todo[i]}`;
+        displayArea.appendChild(listItem);
+      }
+    }
+          
+    </script>
+  
+
+    </head>
+  
+   
+<body>
+  <div id="container">    
+      <h1>Assignment 11.2: JavaScript - Part 3</h1>
+  </div>
+  <input type="text" id="textInput"></input>
+  <button type="button" onclick="addarray()">Add</button>  
+  <button type="button" onclick="deletearray()">Delete Last Entry</button>  
+  <button type="button" onclick="displayItems()">Display</button>
+  <p id="currentList"></p>
+
+  <div id="popup">
+    <p id="popupText"></p>
+    <p id="popupCount"></p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+
+</body>  
