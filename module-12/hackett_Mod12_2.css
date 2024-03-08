@@ -1,0 +1,51 @@
+h1 {
+    text-align: center;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 45%;
+    float: left;
+    padding: 20px;
+}  
+
+#last {
+    float: right;
+    margin-top: 60%;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: right;
+}
+h3 {
+    font-weight: 500;
+}
+
+ul {
+    font-weight: 300;
+    list-style-type: upper-roman;
+}
+
+ol {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover { text-decoration: underline;}
+
+.orderedlist {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.unorderedlist {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
